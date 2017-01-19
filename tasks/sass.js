@@ -28,7 +28,6 @@ gulp.task("sass:main", () => {
     .pipe(concat('flat-admin.css'))
     .pipe(stripCssComments())
     .pipe(gulp.dest('./temp/html/assets/css/'))
-    .pipe(gulp.dest('./temp/angularjs/assets/css/'))
 });
 
 gulp.task("sass:theme", () => {
@@ -45,7 +44,6 @@ gulp.task("sass:theme", () => {
     ]))
     .pipe(stripCssComments())
     .pipe(gulp.dest('./temp/html/assets/css/theme'))
-    .pipe(gulp.dest('./temp/angularjs/assets/css/theme'))
 });
 
 
@@ -60,7 +58,6 @@ gulp.task("build:sass:main", () => {
     .pipe(concat('flat-admin.css'))
     .pipe(stripCssComments())
     .pipe(gulp.dest('./dist/html/assets/css/'))
-    .pipe(gulp.dest('./dist/angularjs/assets/css/'))
 });
 
 gulp.task("build:sass:theme", () => {
@@ -71,5 +68,4 @@ gulp.task("build:sass:theme", () => {
     ]))
     .pipe(stripCssComments())
     .pipe(gulp.dest('./dist/html/assets/css/theme'))
-    .pipe(gulp.dest('./dist/angularjs/assets/css/theme'))
 });
